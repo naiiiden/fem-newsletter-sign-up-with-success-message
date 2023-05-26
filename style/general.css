@@ -4,4 +4,71 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    display: grid;
+}
+
+.start-container {
+    border: 1px solid red;
+    height: 100%;
+    display: grid;
+    margin-top: auto;
+}
+
+.start-container img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.success-container {
+    display: none;
 }
