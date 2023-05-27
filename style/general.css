@@ -50,11 +50,16 @@ main {
     height: 21px;
 }
 
-.start-container form label {
-    display: block;
+form div {
+    display: flex;
     margin-top: .75rem;
     font-weight: 700;
     font-size: .875rem;
+    justify-content: space-between;
+}
+
+form .error {
+    color: var(--tomato);
 }
 
 .start-container form input[type='email'] {
