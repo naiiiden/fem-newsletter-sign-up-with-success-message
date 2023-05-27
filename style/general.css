@@ -28,6 +28,7 @@ main {
 }
 
 .start-container img {
+    display: block;
     width: 100%;
 }
 
@@ -91,6 +92,37 @@ main {
 
     .start-container img {
         border-radius: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        max-width: fit-content;
+    }
+
+    .start-container {
+        max-width: unset;
+        padding: 2rem 2rem 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+    }
+
+    .text-form-container {
+        padding: 2rem 4rem;
+    }
+
+    .text-form-container h1 {
+        font-size: 2.75rem;
+        /* font-size: clamp(2.5rem, 6vw, 4rem); */
+    }
+
+    .start-container picture {
+        grid-area: 1 / 2;
+    }
+
+    .start-container img {
+        border-radius: 0;
     }
 }
 
