@@ -22,7 +22,6 @@ main {
 
 .text-form-container {
     padding: 1.5rem;
-    /* margin-top: -2rem; */
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -50,7 +49,31 @@ main {
     height: 21px;
 }
 
+.start-container form label {
+    display: block;
+    margin-top: .75rem;
+    font-weight: 700;
+    font-size: .875rem;
+}
 
+.start-container form input[type='email'] {
+    display: block;
+    border: 1px solid var(--grey);
+    margin: .25rem 0 1.25rem 0;
+}
+
+.start-container form input[type='submit'] {
+    background: var(--dark-slate-grey);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+}
+
+.start-container form input {
+    width: 100%;
+    border-radius: .375rem;
+    padding: 1rem;
+}
 
 
 
