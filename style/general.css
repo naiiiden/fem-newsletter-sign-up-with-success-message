@@ -5,6 +5,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     display: grid;
+    color: var(--dark-slate-grey);
+    background: var(--charcoal-grey);
+}
+
+main {
+    max-width: 425px;
+    background: var(--white);
+    /* height: fit-content; */
 }
 
 .start-container {
@@ -14,14 +22,33 @@ body {
     margin-top: auto;
 }
 
+.text-form-container {
+    padding: 1.5rem;
+    /* margin-top: -2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
 .start-container img {
     width: 100%;
 }
 
+.start-container h1 {
+    font-size: 2.5rem;
+}
 
+.start-container ul {
+    list-style-image: url('/assets/images/icon-list.svg');
+    margin-left: 2rem;
+}
 
+.start-container ul li {
+}
 
-
+.start-container ul li::marker {
+    /* padding:  1rem; */
+}
 
 
 
