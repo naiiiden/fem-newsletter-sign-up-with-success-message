@@ -60,7 +60,7 @@ main {
 .start-container form input[type='email'] {
     display: block;
     border: 1px solid var(--grey);
-    margin: .25rem 0 1.25rem 0;
+    margin: .25rem 0 1.5rem 0;
 }
 
 .start-container form input[type='submit'] {
@@ -109,12 +109,12 @@ main {
     }
 
     .text-form-container {
+        gap: 2rem;
         padding: 2rem 4rem;
     }
 
     .text-form-container h1 {
         font-size: 2.75rem;
-        /* font-size: clamp(2.5rem, 6vw, 4rem); */
     }
 
     .start-container picture {
@@ -126,7 +126,16 @@ main {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .text-form-container h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
 
+    .start-container form input {
+        border-radius: .5rem;
+        padding: 1.25rem;
+    }
+}
 
 
 
