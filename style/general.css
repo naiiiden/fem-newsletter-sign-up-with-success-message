@@ -62,11 +62,21 @@ form .error {
     color: var(--tomato);
 }
 
+
 .start-container form input[type='email'] {
     display: block;
     border: 1px solid var(--grey);
     color: var(--dark-slate-grey);
     margin: .25rem 0 1.5rem 0;
+}
+
+.email-error-input {
+    border: 1px solid var(--tomato) !important;
+    background: #FFE8E6;
+}
+
+.email-error-input::placeholder {
+    color: var(--tomato);
 }
 
 .btn {
@@ -170,10 +180,6 @@ form .error {
     }
 }
 
-.start-container {
-    display: none;
-}
-
 .success-container {
     height: 100%;
     padding: 1.5rem;
@@ -210,4 +216,14 @@ form .error {
     .success-container h1 {
         font-size: clamp(2.5rem, 4vw, 3.5rem);
     }
+}
+
+
+
+
+
+
+
+.success-container {
+    display: none;
 }
