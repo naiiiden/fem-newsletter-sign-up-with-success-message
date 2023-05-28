@@ -170,41 +170,6 @@ form .error {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .start-container {
     display: none;
 }
@@ -234,4 +199,15 @@ form .error {
 
 .success-container .dismiss-button {
     margin-top: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .success-container {
+        max-width: 500px;
+        padding: 4rem;
+    }
+
+    .success-container h1 {
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+    }
 }
