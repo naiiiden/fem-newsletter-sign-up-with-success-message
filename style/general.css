@@ -69,14 +69,14 @@ form .error {
     margin: .25rem 0 1.5rem 0;
 }
 
-.start-container form input[type='submit'] {
+.btn {
     background: var(--dark-slate-grey);
     color: var(--white);
     font-weight: 700;
     border: none;
 }
 
-.start-container form input {
+.start-container form input, .btn {
     width: 100%;
     border-radius: .375rem;
     padding: 1rem;
@@ -138,14 +138,14 @@ form .error {
         font-size: clamp(2.5rem, 6vw, 4rem);
     }
 
-    .start-container form input {
+    .start-container form input, .btn {
         border-radius: .5rem;
         padding: 1.25rem;
     }
 }
 
 @media (hover:hover) {
-    form input[type='email'], form input[type='submit'] {
+    form input[type='email'], .btn {
         transition: .2s;
     }
 
@@ -160,12 +160,12 @@ form .error {
         outline-style: groove;
     }
 
-    form input[type='submit']:hover, form input[type='submit']:focus-visible {
+    .btn:hover, .btn:focus-visible {
         background: linear-gradient(90deg, rgba(255,98,87,1) 0%, rgba(255,89,87,1) 50%, rgba(255,185,87,1) 100%);
         transition: 2s;
     }
 
-    form input[type='submit']:focus-visible, form input[type='email']:focus-visible {
+    .btn, form input[type='email']:focus-visible {
         transition: .05s;
     }
 }
@@ -205,9 +205,33 @@ form .error {
 
 
 
-
-
+.start-container {
+    display: none;
+}
 
 .success-container {
-    display: none;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.success-container img {
+    margin-top: auto;
+}
+
+.success-container h1 {
+    line-height: 1;
+    font-size: 2.5rem;
+}
+
+.success-container .email-span {
+    font-weight: 700;
+}
+
+.success-container .dismiss-button {
+    margin-top: auto;
 }
